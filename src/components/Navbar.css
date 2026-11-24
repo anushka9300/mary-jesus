@@ -1,0 +1,109 @@
+
+.navbar {
+  width: 100%;
+  min-height: 82px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #222;
+}
+
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: #b51225;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.nav-brand strong,
+.nav-brand small {
+  display: block;
+}
+
+.nav-brand strong {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.nav-brand small {
+  margin-top: 3px;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.25s;
+}
+
+.nav-links a:hover {
+  color: #b51225;
+}
+
+.nav-links .nav-admission {
+  padding: 13px 21px;
+  color: white;
+  background: #b51225;
+  border-radius: 3px;
+}
+
+.nav-links .nav-admission:hover {
+  color: white;
+  background: #8f0d1d;
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: none;
+  color: #222;
+  font-size: 26px;
+}
+
+@media (max-width: 850px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    padding: 25px 6%;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

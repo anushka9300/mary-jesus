@@ -1,0 +1,22 @@
+
+.gradient-waves-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gradient-waves-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-waves {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
